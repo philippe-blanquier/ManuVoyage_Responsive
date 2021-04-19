@@ -187,9 +187,8 @@ div:hover #spanrussie, div:focus #spanrussie{
 
 /*-------------------------------------------------------PAGE 3-----------------------------------------------------------*/
 
-
 .page3 {
-    width: 100vw;
+    
     overflow: hidden;
     background-color: rgb(255, 255, 255);
     padding-bottom: 10%;
