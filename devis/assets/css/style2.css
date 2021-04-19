@@ -1,0 +1,135 @@
+body{
+    font-family:'Oswald', sans-serif;
+    background-color:#f9f4eb;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 15vh;
+    font-size: 2.2rem;
+}
+
+header{
+    position: fixed;
+    width: 100vw;
+    height: 6vh;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.795);
+    top: 0;
+  
+}
+  
+header ul{
+    margin-top: 1vh;
+    display: flex;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.navbar{
+    display: flex;
+}
+.navbar li{
+    text-decoration: none;
+    margin-left: 20px;
+}
+.menu{
+    margin-left: 60vw;
+}
+#title{
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+header li{
+    margin-left:0 40px;
+    font: size 2px;
+}
+
+header i {
+    margin-right: 15px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+.input{
+    margin-bottom: 60px; 
+    border-top: none;
+border-left: none;
+border-right: none; 
+background-color: transparent;
+border-bottom: 2px solid grey;
+letter-spacing: 2px;
+}
+
+#text{
+    line-height: 150%;
+    text-align: center;
+}  
+
+
+
+.blue{
+    text-align: center;
+    border: black;
+    
+    
+}   
+.last{
+    text-align: center;
+    padding: 50px 0 0 0;
+}
+
+.button{
+    text-align: center;
+    margin-left: 10px;
+
+    
+}
+.stay{
+    text-align: center;
+    margin-right: 15px;
+}
+.gras{
+    text-align: center;
+    font-weight: bold;
+}
+.end{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.forget{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+
+}
+#ok{
+    border-radius: 20px;
+    width: 90px;
+    height: 30px;
+    text-shadow: none;
+    
+    
+}
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color:rgba(192, 120, 61, 0.637);
+    }
+   input[type=submit]:active, input[type=reset]:active {
+    background-color:black;
+    box-shadow:1px 1px 1px #D83F3D inset;
+   }
+input[type=submit]
+{   background: black;
+    color:white
+}
+
+
+
+    
