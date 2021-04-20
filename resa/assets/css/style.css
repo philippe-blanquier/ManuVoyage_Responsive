@@ -15,7 +15,7 @@ body
 }
 #text
 {
-    width : 50%;
+    /*PhB width : 50%;*/
     margin-left : 2%;
     margin-top: 5%;
     background-color: white;
@@ -26,16 +26,16 @@ body
 }
 #tableau
 {
-    padding: 5%;
-    width: 70%;
-    margin-top : 8%
+    padding: 2%;
+    /* PhB width: 70%; */
+    margin-top : 6%
 }
 table
 {
     text-align: center;
     table-layout: fixed;
     border-collapse : collapse;
-    width: 100%;
+    /* PhB width: 100%;*/
     font-size: 12px;
 }
 h1
