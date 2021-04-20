@@ -6,33 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espace CLIENT</title>
-   <link rel="stylesheet" href="assets/css/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>  
     <script src="https://kit.fontawesome.com/06392c1ddc.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="assets/css/style2.css">
 </head>
-
 <body>
-
-    <header>
-        <div class="navbar">
-            <div id="title">
-                <a href="../index.html">LAMANU AVENTURES</a>
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <small class="font-weight-bold mb-0 text-uppercase">LA MANU AVENTURES</small>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                        <a class="nav-link scroll-link"a href="devis/client.html"><i class="fas fa-user"></i> Espace client <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#two"><i class="fas fa-heart"></i> Ma Sélection</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#three"><i class="far fa-envelope"></i> Nous contacter</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-            <ul class="menu">
-                <li><a href="#"><i class="fas fa-user"></i>Espace client</a></li>
-                <li><a href="#"><i class="fas fa-heart"></i>Ma Sélection</a></li>
-                <li><a href="#"><i class="far fa-envelope"></i>Nous contacter</a></li>
-
-            </ul>
-        </div>
-
+        </nav>
     </header>
-
-
     <div class=container>
         <div id="first">
             <h1>Mon Devis</h1>
@@ -49,8 +55,6 @@
                 passe.</span>
 
         </div>
-
-
         <form method="post" action="traitement.php">
             <fieldset class="blue">
 
@@ -58,23 +62,17 @@
                     <label for="userName"></label>
                     <input class="input" type="text" name="username" id="username" placeholder="Identifiant" required />
                 </div>
-
                 <div>
                     <label for="password"></label>
                     <input class="input" type="password" name="password" id="password" placeholder="Mot de passe"
                         required />
                 </div>
-
-
-
             </fieldset>
-
             <div class=last>
                 <div class="stay">
                     <label><input id="connection" type="checkbox" name="connection">Rester connecté
                     </label>
                 </div>
-
                 <div class="button">
                     <input id="ok" class="btn" type="submit" value="Valider">
                 </div>
