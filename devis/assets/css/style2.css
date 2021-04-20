@@ -2,30 +2,15 @@ body{
     font-family:'Oswald', sans-serif;
     background-color:#f9f4eb;
 }
-
 h1 {
     text-align: center;
     margin-top: 15vh;
     font-size: 2.2rem;
 }
-
 header{
     position: fixed;
     background-color: rgba(255, 255, 255, 0.795);
-}
-header ul{
-    margin-top: 1vh;
-    display: flex;
-    list-style-type: none;
-    padding-left: 10px;
-}
-/*.navbar{
-    display: flex;
-}
-.navbar li{
-    text-decoration: none;
-    margin-left: 20px;
-}*/
+}  
 .menu{
     margin-left: 60vw;
 }
@@ -34,12 +19,10 @@ header ul{
     font-weight: bold;
     font-size: 1.5em;
 }
-
 header li{
     margin-left:0 40px;
     font: size 2px;
 }
-
 header i {
     margin-right: 15px;
 }
@@ -48,40 +31,34 @@ header a {
     text-decoration: none;
     color: black;
 }
-
 .input{
-    margin-bottom: 60px; 
+    margin-bottom: 30px;
+    margin-top: 30px;
     border-top: none;
-border-left: none;
-border-right: none; 
-background-color: transparent;
-border-bottom: 2px solid grey;
-letter-spacing: 2px;
+    border-left: none;
+    border-right: none; 
+    background-color: transparent;
+    border-bottom: 2px solid grey;
+    letter-spacing: 2px;
 }
-
 #text{
     line-height: 150%;
     text-align: center;
 }  
-
-
-
 .blue{
     text-align: center;
-    border: black;
-    
-    
+    border: black;  
 }   
 .last{
     text-align: center;
-    padding: 50px 0 0 0;
+    padding: 20px 0 0 0;
 }
 
 .button{
     text-align: center;
     margin-left: 10px;
-
-    
+    margin-top: 15px;
+    margin-bottom: 15px;    
 }
 .stay{
     text-align: center;
@@ -95,21 +72,16 @@ letter-spacing: 2px;
     text-align: center;
     font-weight: bold;
 }
-
-
 .forget{
     text-align: center;
     text-decoration: underline;
     text-transform: uppercase;
-
 }
 #ok{
     border-radius: 20px;
     width: 90px;
     height: 30px;
-    text-shadow: none;
-    
-    
+    text-shadow: none;   
 }
 input[type=submit]:hover, input[type=reset]:hover {
     background-color:rgba(192, 120, 61, 0.637);
