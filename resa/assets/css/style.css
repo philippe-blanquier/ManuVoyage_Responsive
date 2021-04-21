@@ -4,7 +4,7 @@
 {
     #text, #tableau, table
     {
-        font-size: 18px;
+        font-size: 16px;
     }    
 }
 /* Small devices (landscape phones) */
@@ -12,16 +12,16 @@
 {
     #text, #tableau, table
     {
-        font-size: 19px;
+        font-size: 18px;
     }    
- 
+
 }
 /* Medium devices (tablets) */
 @media screen and (min-width: 1024px)
 {
-    #text, #tableau, table 
-    { 
-        font-size: 22px;
+    #text, #tableau, table
+    {
+        font-size: 20px;
     }    
 
 }
@@ -30,7 +30,7 @@
 {
     #text, #tableau, table
     {
-        font-size: 23px;
+        font-size: 22px;
     }    
 }
 /* --- common part -- */
@@ -62,7 +62,8 @@ table
     table-layout: fixed;
     border-collapse : collapse;
     /* PhB width: 100%;*/
-    width: 1O0%;
+    margin-left:auto;
+    margin-right:auto;
 }
 h1
 {
@@ -71,7 +72,9 @@ h1
 }
 td
 {
-    margin:auto
+    padding-left: 20px;
+    padding-right: 20px;
+    padding : 10px;
 }
 tbody tr:nth-child(odd) {
     background-color: #f6f3f0;
