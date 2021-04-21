@@ -14,13 +14,13 @@
     {
         font-size: 27px;
     }    
-
+ 
 }
 /* Medium devices (tablets) */
 @media screen and (min-width: 1024px)
 {
     #text, #tableau, table
-    {
+    { 
         font-size: 28px;
     }    
 
