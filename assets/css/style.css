@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 h1 {
@@ -13,10 +13,12 @@ h1 {
 
 /*----------------------------------------------------------Header---------------------------------------------------------*/
 
-header{
+header {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.795);
-  }
+}
+
+
 /*-----------------------------------------------------------PAGE 1------------------------------------------------------------*/
 
 .page1 {
@@ -24,105 +26,154 @@ header{
     width: 100vw;
     background-color: rgb(179, 147, 89);
     background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../img/map.jpg");
+    background-position: center center;
+    background-size: 100%;
     overflow: hidden;
 }
 
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+    .page1 {
+        background-image: url("../img/maptel.jpg");
+    }
+    #trianglekenya {
+        width: 15px;
+        position: absolute;
+        margin-top: 50vh;
+        margin-left: 55vw;
+    }
+    #triangleusa {
+        width: 15px;
+        position: absolute;
+        margin-top: 43vh;
+        margin-left: 15vw;
+    }
+    #trianglerussie {
+        width: 15px;
+        position: absolute;
+        margin-top: 39vh;
+        margin-left: 60vw;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+    .page1 {
+        background-image: url("../img/maptab.jpg");
+        /*iPad*/
+    }
+    #trianglekenya {
+        width: 30px;
+        position: absolute;
+        margin-top: 52vh;
+        margin-left: 55vw;
+    }
+    #triangleusa {
+        width: 30px;
+        position: absolute;
+        margin-top: 42vh;
+        margin-left: 15vw;
+    }
+    #trianglerussie {
+        width: 30px;
+        position: absolute;
+        margin-top: 35vh;
+        margin-left: 65vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .page1 {
+        background-image: url("../img/map.jpg");
+    }
+    #trianglekenya {
+        width: 30px;
+        position: absolute;
+        margin-top: 55vh;
+        margin-left: 55vw;
+    }
+    #triangleusa {
+        width: 30px;
+        position: absolute;
+        margin-top: 30vh;
+        margin-left: 20vw;
+    }
+    #trianglerussie {
+        width: 30px;
+        position: absolute;
+        margin-top: 18vh;
+        margin-left: 60vw;
+    }
+}
 
 .page1 ul {
     list-style-type: none;
 }
 
-
-#trianglekenya {
-    width: 30px;
+div #spanusa {
     position: absolute;
-    margin-top: 55vh;
-    margin-left: 55vw;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 2px;
+    margin-top: 32vh;
+    margin-left: 22vw;
+    transform: scale(0) rotate(-12deg);
+    transition: all .25s;
+    opacity: 0;
 }
 
-#triangleusa {
-    width: 30px;
+.page1 div:hover,
+div:focus {
+    background: rgba(0, 0, 0, .4);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .4);
+}
+
+div:hover #spanusa,
+div:focus #spanusa {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+}
+
+div #spankenya {
     position: absolute;
-    margin-top: 30vh;
-    margin-left: 20vw;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 2px;
+    margin-top: 57vh;
+    margin-left: 57vw;
+    transform: scale(0) rotate(-12deg);
+    transition: all .25s;
+    opacity: 0;
 }
 
-#trianglerussie {
-    width: 30px;
+div:hover #spankenya,
+div:focus #spankenya {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+}
+
+div #spanrussie {
     position: absolute;
-    margin-top: 18vh;
-    margin-left: 60vw;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 2px;
+    margin-top: 20vh;
+    margin-left: 62vw;
+    transform: scale(0) rotate(-12deg);
+    transition: all .25s;
+    opacity: 0;
 }
 
-
-
-div #spanusa{
-    position:absolute;
-    color:rgb(0, 0, 0);
-    background:#ffffff;
-    padding:15px;
-    border-radius:2px;
-    margin-top:32vh;
-    margin-left:22vw;
-    transform:scale(0) rotate(-12deg);
-    transition:all .25s;
-    opacity:0;     
-}
-
-
-.page1 div:hover,div:focus{
-    background:rgba(0,0,0,.4);
-    box-shadow:0 1px 0 rgba(255,255,255,.4);
-}
-
-div:hover #spanusa, div:focus #spanusa{
-    transform:scale(1) rotate(0); 
-    opacity:1;       
-}
-
-
-div #spankenya{
-    position:absolute;
-    color:rgb(0, 0, 0);
-    background:#ffffff;
-    padding:15px;
-    border-radius:2px;
-    margin-top:57vh;
-    margin-left:57vw;
-    transform:scale(0) rotate(-12deg);
-    transition:all .25s;
-    opacity:0;     
-}
-
-
-div:hover #spankenya, div:focus #spankenya{
-    transform:scale(1) rotate(0); 
-    opacity:1;       
-}
-
-div #spanrussie{
-    position:absolute;
-    color:rgb(0, 0, 0);
-    background:#ffffff;
-    padding:15px;
-    border-radius:2px;
-    margin-top:20vh;
-    margin-left:62vw;
-    transform:scale(0) rotate(-12deg);
-    transition:all .25s;
-    opacity:0;     
-}
-
-
-div:hover #spanrussie, div:focus #spanrussie{
-    transform:scale(1) rotate(0); 
-    opacity:1;       
+div:hover #spanrussie,
+div:focus #spanrussie {
+    transform: scale(1) rotate(0);
+    opacity: 1;
 }
 
 
 /*-------------------------------------------------------PAGE 2-----------------------------------------------------------*/
+
 .billet {
     position: absolute;
     margin-left: 80vw;
@@ -130,14 +181,15 @@ div:hover #spanrussie, div:focus #spanrussie{
     width: 10vw;
 }
 
-.page2
-{
+.page2 {
     background-color: rgb(255, 240, 217);
     width: 100vw;
     overflow: hidden;
 }
 
-.titre                            /*modifie les titres des pages 2 et 3*/
+.titre
+/*modifie les titres des pages 2 et 3*/
+
 {
     margin-top: 10vh;
     text-align: center;
@@ -145,59 +197,55 @@ div:hover #spanrussie, div:focus #spanrussie{
     color: gray;
 }
 
-.photo1
-{
-
+.photo1 {
     border: 1px solid rgb(201, 199, 199);
-    background: #ffff; 
+    background: #ffff;
     margin: auto;
     width: 30vw;
 }
 
-
-.photo
-{
-   padding : 23px;
-
+.photo {
+    padding: 23px;
 }
-.text p
-{
+
+.text p {
     text-align: center;
 }
 
-.ContainerPhoto
-{
-    display:flex;
+.ContainerPhoto {
+    display: flex;
 }
-.price
-{
+
+.price {
     color: #715241;
     font-weight: bold;
 }
-.size
-{
+
+.size {
     font-size: larger;
 }
 
 .caption-1 figcaption {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
+
 
 /*-------------------------------------------------------PAGE 3-----------------------------------------------------------*/
 
 .page3 {
-    
     overflow: hidden;
     background-color: rgb(255, 255, 255);
     padding-bottom: 10%;
 }
 
-.avis1, .avis2 {
+.avis1,
+.avis2 {
     display: flex;
     width: 70vw;
-    margin: 0 auto;                               /* centre les div horizontallement */
+    margin: 0 auto;
+    /* centre les div horizontallement */
     background-color: rgb(209, 201, 190);
     transition: .5s ease;
     -webkit-transition: all 0.5s;
@@ -205,7 +253,6 @@ div:hover #spanrussie, div:focus #spanrussie{
 
 .avis2 {
     margin-top: 50px;
-    
 }
 
 .avis_avatar {
@@ -242,7 +289,7 @@ div:hover #spanrussie, div:focus #spanrussie{
 footer {
     width: 100%;
     overflow: hidden;
-    background-color:#645555;
+    background-color: #645555;
 }
 
 .div_footer {
@@ -267,7 +314,6 @@ footer {
     padding: 40px;
     color: white;
     text-align: right;
-
 }
 
 footer strong {
