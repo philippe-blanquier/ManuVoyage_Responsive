@@ -350,8 +350,51 @@ footer span {
 footer i {
     font-size: 3em;
     padding: 5px;
+    }
+    .div_footer {
+        display: flex;
+    }
+    .mail {
+        width: 33vw;
+        padding: 40px;
+        color: white;
+    }
+    .tel {
+        width: 33vw;
+        padding: 40px;
+        color: white;
+        text-align: center;
+    }
+    .liens {
+        width: 34vw;
+        padding: 40px;
+        color: white;
+        text-align: right;
+    }
+    footer strong {
+        font-size: 2em;
+    }
+    footer span {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    footer i {
+        font-size: 3em;
+        padding: 5px;
+    }
+    footer a {
+        color: white;
+        transition: .5s ease;
+        -webkit-transition: all 0.5s;
+    }
+    footer a:hover {
+        color: rgb(184, 184, 183);
+        font-size: 110%;
+        transition: .5s ease;
+        -webkit-transition: all 0.5s;
+    }
 }
-}
+
 
 @media (min-width: 481px) and (max-width: 1200px) {
     footer {
