@@ -1,3 +1,39 @@
+/* --- Specific text responsive --- */
+/* X-Small devices (portrait phones) */
+@media screen and (min-width: 576px) 
+{
+    #text, #tableau, table
+    {
+        font-size: 26px;
+    }    
+}
+/* Small devices (landscape phones) */
+@media screen and (min-width: 768px)
+{
+    #text, #tableau, table
+    {
+        font-size: 27px;
+    }    
+ 
+}
+/* Medium devices (tablets) */
+@media screen and (min-width: 1024px)
+{
+    #text, #tableau, table 
+    { 
+        font-size: 28px;
+    }    
+
+}
+/* Large devices (desktops) */
+@media screen and (min-width: 1300px) 
+{
+    #text, #tableau, table
+    {
+        font-size: 28px;
+    }    
+}
+/* --- common part -- */
 body
 {
     margin: 0;
@@ -26,7 +62,8 @@ table
     table-layout: fixed;
     border-collapse : collapse;
     /* PhB width: 100%;*/
-    font-size: 12px;
+    margin-left:auto;
+    margin-right:auto;
 }
 h1
 {
