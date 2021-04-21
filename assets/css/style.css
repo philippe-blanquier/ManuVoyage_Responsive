@@ -58,7 +58,6 @@ header {
 @media (min-width: 481px) and (max-width: 1200px) {
     .page1 {
         background-image: url("../img/maptab.jpg");
-        /*iPad*/
     }
     #trianglekenya {
         width: 30px;
@@ -286,59 +285,150 @@ div:focus #spanrussie {
 
 /*----------------------------------------------------------FOOTER----------------------------------------------------------------*/
 
-footer {
-    width: 100%;
-    overflow: hidden;
-    background-color: #645555;
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+    footer {
+        width: 100%;
+        overflow: hidden;
+        background-color: #645555;
+    }
+    .div_footer {
+        display: flex;
+    }
+    .mail {
+        width: 33vw;
+        padding: 40px;
+        color: white;
+    }
+    .tel {
+        width: 33vw;
+        padding: 40px;
+        color: white;
+        text-align: center;
+    }
+    .liens {
+        width: 34vw;
+        padding: 40px;
+        color: white;
+        text-align: right;
+    }
+    footer strong {
+        font-size: 2em;
+    }
+    footer span {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    footer i {
+        font-size: 3em;
+        padding: 5px;
+    }
+    footer a {
+        color: white;
+        transition: .5s ease;
+        -webkit-transition: all 0.5s;
+    }
+    footer a:hover {
+        color: rgb(184, 184, 183);
+        font-size: 110%;
+        transition: .5s ease;
+        -webkit-transition: all 0.5s;
+    }
 }
 
-.div_footer {
-    display: flex;
+@media (min-width: 481px) and (max-width: 1200px) {
+    footer {
+        width: 100%;
+        overflow: hidden;
+        background-color: #645555;
+    }
+    .div_footer {
+        display: flex;
+    }
+    .mail {
+        width: 33vw;
+        padding: 40px;
+        color: white;
+    }
+    .tel {
+        width: 33vw;
+        padding: 40px;
+        color: white;
+        text-align: center;
+    }
+    .liens {
+        width: 34vw;
+        padding: 40px;
+        color: white;
+        text-align: right;
+    }
+    footer strong {
+        font-size: 2em;
+    }
+    footer span {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    footer i {
+        font-size: 3em;
+        padding: 5px;
+    }
+    footer a {
+        color: white;
+        transition: .5s ease;
+        -webkit-transition: all 0.5s;
+    }
+    footer a:hover {
+        color: rgb(184, 184, 183);
+        font-size: 110%;
+        transition: .5s ease;
+        -webkit-transition: all 0.5s;
+    }
 }
 
-.mail {
-    width: 33vw;
-    padding: 40px;
-    color: white;
-}
-
-.tel {
-    width: 33vw;
-    padding: 40px;
-    color: white;
-    text-align: center;
-}
-
-.liens {
-    width: 34vw;
-    padding: 40px;
-    color: white;
-    text-align: right;
-}
-
-footer strong {
-    font-size: 2em;
-}
-
-footer span {
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-footer i {
-    font-size: 3em;
-    padding: 5px;
-}
-
-footer a {
-    color: white;
-    transition: .5s ease;
-    -webkit-transition: all 0.5s;
-}
-
-footer a:hover {
-    color: rgb(184, 184, 183);
-    font-size: 110%;
-    transition: .5s ease;
-    -webkit-transition: all 0.5s;
+@media (min-width: 1200px) {
+    footer {
+        width: 100%;
+        overflow: hidden;
+        background-color: #645555;
+    }
+    .div_footer {
+        display: flex;
+    }
+    .mail {
+        width: 33vw;
+        padding: 40px;
+        color: white;
+    }
+    .tel {
+        width: 33vw;
+        padding: 40px;
+        color: white;
+    }
+    .liens {
+        width: 34vw;
+        padding: 40px;
+        color: white;
+    }
+    footer strong {
+        font-size: 2em;
+    }
+    footer span {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    footer i {
+        font-size: 3em;
+        padding: 5px;
+    }
+    footer a {
+        color: white;
+        transition: .5s ease;
+        -webkit-transition: all 0.5s;
+    }
+    footer a:hover {
+        color: rgb(184, 184, 183);
+        font-size: 110%;
+        transition: .5s ease;
+        -webkit-transition: all 0.5s;
+    }
 }
