@@ -9,7 +9,9 @@
 h1 {
     font-size: 2em;
 }
-
+body {
+    background: url(map.jpg) center center cover no-repeat fixed;
+    }
 
 /*----------------------------------------------------------Header---------------------------------------------------------*/
 
@@ -25,7 +27,6 @@ header{
     background-color: rgb(179, 147, 89);
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../img/map.jpg");
     overflow: hidden;
 }
 
