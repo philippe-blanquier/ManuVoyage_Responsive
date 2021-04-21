@@ -34,6 +34,7 @@ header {
 @media (min-device-width: 320px) and (max-device-width: 480px) {
     .page1 {
         background-image: url("../img/maptel.jpg");
+        /* Téléphone */
     }
     #trianglekenya {
         width: 15px;
@@ -83,6 +84,7 @@ header {
 @media (min-width: 1200px) {
     .page1 {
         background-image: url("../img/map.jpg");
+        /* Ordi et plus grand */
     }
     #trianglekenya {
         width: 30px;
@@ -173,12 +175,25 @@ div:focus #spanrussie {
 
 
 /*-------------------------------------------------------PAGE 2-----------------------------------------------------------*/
-
+@media (min-width: 1200px) {
+    
 .billet {
     position: absolute;
     margin-left: 80vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
     width: 10vw;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1199px) {
+    
+    .billet {
+        position: relative;
+        margin-left: 42.5vw;
+        margin-right: 42.5vw;
+        margin-top: 10vh;
+        width: 15vw;
+    }
 }
 
 .page2 {
@@ -191,9 +206,9 @@ div:focus #spanrussie {
 /*modifie les titres des pages 2 et 3*/
 
 {
-    margin-top: 10vh;
+    margin-top: 5vh;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 5vh;
     color: gray;
 }
 
@@ -295,6 +310,7 @@ footer {
 .div_footer {
     display: flex;
 }
+
 
 .mail {
     width: 33vw;
